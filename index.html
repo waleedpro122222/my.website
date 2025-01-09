@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GANAI Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to GANAI</h1>
+        <div id="login-section">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+        <div id="subscription-section" style="display:none;">
+            <h1>Select a Plan</h1>
+            <div class="plan">
+                <h2>Free Plan</h2>
+                <p>Chat only</p>
+                <button onclick="selectPlan('Free')">Choose</button>
+            </div>
+            <div class="plan">
+                <h2>Standard Plan - $9.99</h2>
+                <p>Chat and generate photos</p>
+                <button onclick="selectPlan('Standard')">Choose</button>
+            </div>
+            <div class="plan">
+           
+                <h2>Premium Plan - $19.99</h2>
+                <p>Chat, generate photos and videos</p>
+                <button onclick="selectPlan('Premium')">Choose</button>
